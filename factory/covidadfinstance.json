@@ -1,0 +1,9 @@
+{
+	"name": "covidadfinstance",
+	"location": "francecentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3b4ebf19-e6c8-476a-9550-9c4d72ae9917",
+		"tenantId": "4a06d40c-e447-42be-baef-dd0421ed10bd"
+	}
+}
