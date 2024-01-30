@@ -59,6 +59,20 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "If file exists",
+				"type": "Validation",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "ds_population_raw_gz",
+						"type": "DatasetReference"
+					},
+					"timeout": "0.12:00:00",
+					"sleep": 10
+				}
 			}
 		],
 		"concurrency": 1,
