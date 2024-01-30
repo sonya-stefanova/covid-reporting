@@ -13,6 +13,9 @@
 		},
 		"ls_dl_azurecovidreporting_properties_typeProperties_url": {
 			"value": "https://azurecovidreporting.dfs.core.windows.net/"
+		},
+		"tr_ingest_population_data_properties_typeProperties_scope": {
+			"value": "/subscriptions/3963d62f-4c9a-4f5c-aa8e-77f8aa44df0b/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/covidstorageacc"
 		}
 	}
 }
