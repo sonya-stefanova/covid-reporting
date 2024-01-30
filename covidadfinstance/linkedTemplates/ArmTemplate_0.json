@@ -55,7 +55,7 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/ds_population_raw_gx')]",
+			"name": "[concat(parameters('factoryName'), '/ds_population_raw_gz')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -98,7 +98,6 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "ds_population_by_age_tsv",
 						"fileSystem": "raw"
 					},
 					"columnDelimiter": "\t",
@@ -165,7 +164,7 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "ds_population_raw_gx",
+								"referenceName": "ds_population_raw_gz",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -186,7 +185,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/ds_population_raw_gx')]",
+				"[concat(variables('factoryId'), '/datasets/ds_population_raw_gz')]",
 				"[concat(variables('factoryId'), '/datasets/ds_population_raw_tsv')]"
 			]
 		}
