@@ -100,7 +100,9 @@
 						"type": "DatasetReference"
 					},
 					"fieldList": [
-						"columnCount"
+						"columnCount",
+						"exists",
+						"size"
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
