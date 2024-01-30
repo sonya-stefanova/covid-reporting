@@ -49,7 +49,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_population_raw_gx",
+						"referenceName": "ds_population_raw_gz",
 						"type": "DatasetReference"
 					}
 				],
