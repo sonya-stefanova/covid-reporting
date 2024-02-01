@@ -102,7 +102,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"relativeURL": {
-											"value": "@pipeline().parameters.sourceRelativeUrl",
+											"value": "@item().sourceRelativeURL",
 											"type": "Expression"
 										}
 									}
