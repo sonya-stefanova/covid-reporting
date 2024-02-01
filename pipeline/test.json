@@ -54,6 +54,11 @@
 				}
 			}
 		],
+		"variables": {
+			"sourceRelativeUrl": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
