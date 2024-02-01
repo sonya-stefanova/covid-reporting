@@ -44,6 +44,11 @@
 						]
 					}
 				],
+				"userProperties": [
+					{
+						"name": "sourceRelativeURL"
+					}
+				],
 				"typeProperties": {
 					"items": {
 						"value": "@activity('Lookup1').output.value",
@@ -61,7 +66,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "sourceRelativeURL",
+								"variableName": "",
 								"value": {
 									"value": "@item().sourceRelatedURL",
 									"type": "Expression"
@@ -72,11 +77,6 @@
 				}
 			}
 		],
-		"variables": {
-			"sourceRelativeURL": {
-				"type": "String"
-			}
-		},
 		"annotations": []
 	}
 }
