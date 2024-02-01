@@ -19,10 +19,6 @@
 			"type": "string",
 			"defaultValue": "https://azurecovidreporting.dfs.core.windows.net/"
 		},
-		"tr_ingest_population_data_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/3963d62f-4c9a-4f5c-aa8e-77f8aa44df0b/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/covidstorageacc"
-		},
 		"ls_http_coviddata_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://github.com"
@@ -34,6 +30,10 @@
 		"tr_ingest_hospital_admissions_data_properties_pl_ingest_ecdc_data_parameters_sinkFileName": {
 			"type": "string",
 			"defaultValue": "hospital_admissions.csv"
+		},
+		"tr_ingest_population_data_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/3963d62f-4c9a-4f5c-aa8e-77f8aa44df0b/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/covidstorageacc"
 		},
 		"containerUri": {
 			"type": "string",
@@ -74,14 +74,14 @@
 					"ls_http_coviddata_properties_typeProperties_url": {
 						"value": "[parameters('ls_http_coviddata_properties_typeProperties_url')]"
 					},
-					"tr_ingest_population_data_properties_typeProperties_scope": {
-						"value": "[parameters('tr_ingest_population_data_properties_typeProperties_scope')]"
-					},
 					"tr_ingest_hospital_admissions_data_properties_pl_ingest_ecdc_data_parameters_sourceRelativeUrl": {
 						"value": "[parameters('tr_ingest_hospital_admissions_data_properties_pl_ingest_ecdc_data_parameters_sourceRelativeUrl')]"
 					},
 					"tr_ingest_hospital_admissions_data_properties_pl_ingest_ecdc_data_parameters_sinkFileName": {
 						"value": "[parameters('tr_ingest_hospital_admissions_data_properties_pl_ingest_ecdc_data_parameters_sinkFileName')]"
+					},
+					"tr_ingest_population_data_properties_typeProperties_scope": {
+						"value": "[parameters('tr_ingest_population_data_properties_typeProperties_scope')]"
 					}
 				}
 			},
