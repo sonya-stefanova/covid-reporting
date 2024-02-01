@@ -114,7 +114,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"fileName": {
-											"value": "@pipeline().parameters.sinkFileName",
+											"value": "@item().sinkFileName",
 											"type": "Expression"
 										}
 									}
